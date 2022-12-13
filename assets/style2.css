@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+*{
+    margin:0;
+}
+
+body{
+    background: url(./images/butterfly1.jpg);
+    background-size: 1664px 1108px;
+}
+
+.app{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.nav-bar{
+    height:100px;
+    background-color: rgba(223, 239, 253, 0.79);
+}
+
+.cart{
+    background-color: rgba(223, 239, 253, 0.79);
+    width:100px;
+    height:45px;
+    text-align: center;
+    font-size: 200%;
+    float: right;
+    margin-right: 100px;
+}
+
+.nav-bar h1{
+    text-align: center;
+    font-family:'Dancing Script', cursive;
+    font-size: 450%;
+}
+
+.articles{
+    width:60%;
+    margin: auto;
+}
+
+.product-1{
+    background-color: rgba(223, 239, 253, 0.79);
+    padding-left: 20px;
+    height:400px;
+
+}
+
+.product-1 h1, .form h3{
+    font-family:'Dancing Script', cursive;
+    font-size: 250%;
+}
+
+.product-1 p,.product-1 li, .form p {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 110%;
+    color:#b990bc;
+}
+
+.product-1 img{
+    width: 25%;
+    height:25%;
+}
+
+.info{
+    float:right;
+    margin-right: 250px;
+}
+
+.button{
+    background-color: #ae9fb4;
+    border : #96828d;
+    font-size: 120%;
+    color:white;
+}
+.color-circle{   
+    width:50px;
+    height:50px;
+    margin-top:8px;
+    border:2px solid white;
+    border-radius:50%;
+}
+
+
+
+.form{
+    background-color: rgba(223, 239, 253, 0.79);
+    padding-left: 20px;
+    height: 380px; /*auto*/
+}
+
+
+
+
+.disableButton{
+    background: #af4b49;
+    cursor:not-allowed;
+}

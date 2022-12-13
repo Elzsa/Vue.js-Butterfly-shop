@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style2.css">
+    <!--Import vue.js version 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Butterfly - Shop Page</title>
+</head>
+<body>
+    <div id="app">
+        <div class="nav-bar">
+            <h1>Butterfly shop</h1>
+        </div>
+        <br><br><br><br><br>
+        <div class="cart"><p>Cart {{cart.length}}</p></div>
+        
+        <div class="articles">
+            <div class="product-1">
+                <product-display :premium="premium" @add-to-cart="updateCart"></product-display> <!--On vient de creer une balise/component-->
+            </div>
+            <br><br>
+            <div class="form">
+                
+                
+                
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    
+    <!--Here we import a js script but it also import full Vue.js as written l1 in main.js-->
+    <script src="main.js"></script>
+
+    <!--Here we import the components-->
+    <script src="./components/ProductDisplay.js"></script>
+    <script src="./components/ReviewForm.js"></script>
+    <script src="./components/ReviewList.js"></script>
+    <script>
+        const mountedApp = app.mount('#app')
+    </script>
+</body>
+</html>
